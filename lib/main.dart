@@ -6,6 +6,7 @@ import 'features/posts/presentation/bloc/add_delete_update_post/add_delete_updat
 import 'features/posts/presentation/bloc/posts/posts_bloc.dart';
 import 'features/posts/presentation/pages/posts_page.dart';
 import 'injection_container.dart' as di;
+import 'dart:developer' as dv;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,6 +17,9 @@ void main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    dv.log(' the satrt of bloc provider ',
+        time: DateTime.now(), name: 'trace of the root');
+
     return MultiBlocProvider(
         providers: [
           BlocProvider(

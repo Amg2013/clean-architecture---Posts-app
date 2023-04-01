@@ -6,7 +6,6 @@ import '../../../domain/usecases/delete_post.dart';
 import '../../../domain/usecases/update_post.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-
 import '../../../../../core/error/failures.dart';
 import '../../../../../core/strings/failures.dart';
 
